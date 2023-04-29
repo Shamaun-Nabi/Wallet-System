@@ -15,6 +15,7 @@ document
         showConfirmButton: false,
         timer: 1900,
       });
+      window.location.href = "bank.html";
     } else {
       //   alert("Please Enter Your Valid Email or Password");
 
