@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Wallet System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Own Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert alert-primary mt-2 text-center text-dark" role="alert">
+        Welcome to My Wallet System
+      </div>
+      <div class="row gap-1 p-3 d-flex justify-content-center">
+        <div class="col-12 col-md-4 shadow-lg p-3 border rounded">
+          <div class="">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 shadow-sm p-3">
+          <div class="p-4 d-flex justify-content-center">
+            <div
+              class="card bg-success text-white p-2 text-center"
+              style="width: 20rem"
+            >
+              <h4>Total Balance :</h4>
+              <p class="display-6"><span id="totalAmount">0</span> tk</p>
+            </div>
+          </div>
+          <div class="row gap-2 d-flex justify-content-center">
+            <div class="col-12 col-md-5 border p-3 rounded">
+              <div>
+                <img width="30" src="./images/deposit.png" alt="" />
+                <h5>Deposit Amount :</h5>
+              </div>
+              <p><span id="depositeValue">0</span> tk</p>
+            </div>
+            <div class="col-12 col-md-5 border p-3 rounded">
+              <div>
+                <img width="30" src="./images/cash-withdrawal.png" alt="" />
+                <h5>Withdraw Amount :</h5>
+              </div>
+              <p><span id="withdrawPrevious">0</span> tk</p>
+            </div>
+          </div>
+          <div class="row gap-2 d-flex justify-content-center">
+            <div
+              class="col-12 col-md-5 border bg-info-subtle mt-1 text-light p-3 rounded"
+            >
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Deposit Amount"
+                id="userAmount"
+              />
+              <button id="deposite-Btn" class="btn btn-warning mt-1">
+                Deposit Now
+              </button>
+            </div>
+            <div
+              class="col-12 col-md-5 border bg-success-subtle mt-1 text-light p-3 rounded"
+            >
+              <input
+                class="form-control"
+                type="number"
+                placeholder="Withdraw Amount"
+                id="withdrawValue"
+              />
+              <button id="withdraw-btn" class="btn btn-danger mt-1">
+                Withdraw Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="alert alert-primary mt-2 text-center text-dark-emphasis"
+        role="alert"
+      >
+        © Copyright By Women Developers BD
+      </div>
+    </div>
+    <!-- Depsoite Js -->
+    <script src="./js/depsoite.js"></script>
+    <!-- Withdraw Js -->
+    <script src="./js/withdraw.js"></script>
+    <!-- Chart Js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart External File -->
+    <script src="./js/myChart.js"></script>
+    <!-- Bootstrap 5 Js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

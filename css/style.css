@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Bangla", sans-serif;
+}
+
+.loginArea {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.mainLoginBg{
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:darken;
+}
+
+.overLayDark{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 35, 35, 0.719);
+}
